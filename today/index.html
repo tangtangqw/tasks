@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>每日计划</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">每日计划表</div>
+        <div class="table weeks">
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">07:00-08:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">08:00-09:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">09:00-12:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">12:00-13:10</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">13:10-18:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">18:00-20:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">20:00-22:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">22:00-23:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="popup">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="time" contenteditable="true">23:00-07:00</div>
+                <div class="task">
+                    <input type="text">
+                    <button class="add-task">详细</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tr-summary">
+            <div>每日总结：</div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <script type="text/template" id="table">
+        {{#todayDate}}
+        <div class="tr">
+            <div class="popup">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="time" contenteditable="true">{{.}}</div>
+            <div class="task">
+                <input type="text">
+                <button class="add-task">详细</button>
+            </div>
+        </div>
+        {{/todayDate}}
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/hogan.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
